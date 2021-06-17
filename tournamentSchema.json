@@ -1,0 +1,172 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$ref": "#/definitions/Tournament",
+    "definitions": {
+        "Tournament": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "event": {
+                    "$ref": "#/definitions/Event"
+                },
+                "sets": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Set"
+                    }
+                },
+                "entrants": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Entrant"
+                    }
+                }
+            },
+            "required": [],
+            "title": "Tournament"
+        },
+        "Entrant": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "entrantID": {
+                    "type": "string"
+                },
+                "entrantTag": {
+                    "type": "string"
+                },
+                "initialSeed": {
+                    "type": "integer"
+                },
+                "finalPlacement": {
+                    "type": "integer"
+                },
+                "personalInformation": {
+                    "$ref": "#/definitions/PersonalInformation"
+                }
+            },
+            "required": [],
+            "title": "Entrant"
+        },
+        "PersonalInformation": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "name": {
+                    "type": "string"
+                },
+                "country": {
+                    "type": "string"
+                }
+            },
+            "required": [],
+            "title": "PersonalInformation"
+        },
+        "Event": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "name": {
+                    "type": "string"
+                },
+                "date": {
+                    "type": "string",
+                    "format": "date"
+                },
+                "game": {
+                    "type": "string"
+                },
+                "ruleset": {
+                    "type": "string"
+                },
+                "originURL": {
+                    "type": "string"
+                },
+                "numberEntrants": {
+                    "type": "integer"
+                }
+            },
+            "required": [],
+            "title": "Event"
+        },
+        "Set": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "setID": {
+                    "type": "string",
+                    "format": "integer"
+                },
+                "entrant1ID": {
+                    "type": "string"
+                },
+                "entrant2ID": {
+                    "type": "string"
+                },
+                "status": {
+                    "type": "string"
+                },
+                "entrant1Result": {
+                    "type": "string"
+                },
+                "entrant2Result": {
+                    "type": "string"
+                },
+                "entrant1Score": {
+                    "type": "integer"
+                },
+                "entrant2Score": {
+                    "type": "integer"
+                },
+                "winnerNextSetID": {
+                    "type": "string",
+                    "format": "integer"
+                },
+                "loserNextSetId": {
+                    "type": "string",
+                    "format": "integer"
+                },
+                "setFormat": {
+                    "type": "string"
+                },
+                "phaseID": {
+                    "type": "string"
+                },
+                "rounds": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Round"
+                    }
+                }
+            },
+            "required": [],
+            "title": "Set"
+        },
+        "Round": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "roundNumber": {
+                    "type": "integer"
+                },
+                "entrant1char": {
+                    "type": "string"
+                },
+                "entrant2char": {
+                    "type": "string"
+                },
+                "stage": {
+                    "type": "string"
+                },
+                "entrant1result": {
+                    "type": "string"
+                },
+                "entrant2result": {
+                    "type": "string"
+                }
+            },
+            "required": [],
+            "title": "Round"
+        }
+    }
+}

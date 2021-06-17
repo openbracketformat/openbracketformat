@@ -1,0 +1,74 @@
+{
+    "event": {
+        "name": "Example Tournament",
+        "date": "2021-06-17",
+        "game": "Super Smash Brothers Melee",
+        "ruleset": "default",
+        "originURL": "www.example.com",
+        "numberEntrants": 2
+    },
+    "sets": [
+        {
+            "setID": "1",
+            "entrant1ID": "alice",
+            "entrant2ID": "dave",
+            "status": "completed",
+            "entrant1Result": "win",
+            "entrant2Result": "lose",
+            "entrant1Score": 3,
+            "entrant2Score": 0,
+            "winnerNextSetID": "4",
+            "loserNextSetId": "3",
+            "setFormat": "bestof5",
+            "phaseID": "top 64",
+            "rounds": [
+                {
+                    "roundNumber": 1,
+                    "entrant1char": "falco",
+                    "entrant2char": "peach",
+                    "stage": "Final Destination",
+                    "entrant1result": "win",
+                    "entrant2result": "lose"
+                },
+                {
+                    "roundNumber": 2,
+                    "entrant1char": "falco",
+                    "entrant2char": "peach",
+                    "stage": "Yoshi's Story",
+                    "entrant1result": "win",
+                    "entrant2result": "lose"
+                },
+                {
+                    "roundNumber": 3,
+                    "entrant1char": "falco",
+                    "entrant2char": "peach",
+                    "stage": "Yoshi's Story",
+                    "entrant1result": "win",
+                    "entrant2result": "lose"
+                }
+            ]
+        }
+    ],
+    "entrants": [
+        {
+            "entrantID": "alice",
+            "entrantTag": "Alice",
+            "initialSeed": 1,
+            "finalPlacement": 1,
+            "personalInformation": {
+                "name": "Alice Alice",
+                "country": "USA"
+            }
+        },
+        {
+            "entrantID": "dave",
+            "entrantTag": "Dave",
+            "initialSeed": 2,
+            "finalPlacement": 2,
+            "personalInformation": {
+                "name": "Dave McDave",
+                "country": "USA"
+            }
+        }
+    ]
+}
