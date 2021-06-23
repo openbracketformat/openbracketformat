@@ -1,0 +1,77 @@
+{
+    "event": {
+        "name": "Minimal Example"
+    },
+    "sets": [
+        {
+            "setID": "1",
+            "entrant1ID": "alice",
+            "entrant2ID": "dave",
+            "status": "completed",
+            "entrant1Result": "win",
+            "entrant2Result": "lose"
+        },
+        {
+            "setID": "2",
+            "entrant1ID": "bob",
+            "entrant2ID": "chuck",
+            "status": "completed",
+            "entrant1Result": "win",
+            "entrant2Result": "lose"
+        },
+        {
+            "setID": "3",
+            "entrant1ID": "dave",
+            "entrant2ID": "chuck",
+            "status": "completed",
+            "entrant1Result": "lose",
+            "entrant2Result": "win"
+        },
+        {
+            "setID": "4",
+            "entrant1ID": "alice",
+            "entrant2ID": "bob",
+            "status": "completed",
+            "entrant1Result": "lose",
+            "entrant2Result": "win"
+        },
+        {
+            "setID": "5",
+            "entrant1ID": "bob",
+            "entrant2ID": "chuck",
+            "status": "completed",
+            "entrant1Result": "win",
+            "entrant2Result": "lose"
+        },
+        {
+            "setID": "6",
+            "entrant1ID": "alice",
+            "entrant2ID": "bob",
+            "status": "completed",
+            "entrant1Result": "lose",
+            "entrant2Result": "win"
+        },
+        {
+            "setID": "7",
+            "entrant1ID": "bob",
+            "entrant2ID": "alice",
+            "status": "completed",
+            "entrant1Result": "lose",
+            "entrant2Result": "win"
+        }
+    ],
+    "entrants": [
+        {
+            "entrantID": "alice"
+        },
+        {
+            "entrantID": "bob"
+        },
+        {
+            "entrantID": "chuck"
+        },
+        {
+            "entrantID": "dave"
+        }
+    ]
+}
