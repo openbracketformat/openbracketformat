@@ -24,27 +24,27 @@
             "rounds": [
                 {
                     "roundNumber": 1,
-                    "entrant1char": "falco",
-                    "entrant2char": "peach",
+                    "entrant1Character": "falco",
+                    "entrant2Character": "peach",
                     "stage": "Final Destination",
-                    "entrant1result": "win",
-                    "entrant2result": "lose"
+                    "entrant1Result": "win",
+                    "entrant2Result": "lose"
                 },
                 {
                     "roundNumber": 2,
-                    "entrant1char": "falco",
-                    "entrant2char": "peach",
+                    "entrant1Character": "falco",
+                    "entrant2Character": "peach",
                     "stage": "Yoshi's Story",
-                    "entrant1result": "win",
-                    "entrant2result": "lose"
+                    "entrant1Result": "win",
+                    "entrant2Result": "lose"
                 },
                 {
                     "roundNumber": 3,
-                    "entrant1char": "falco",
-                    "entrant2char": "peach",
+                    "entrant1Character": "falco",
+                    "entrant2Character": "peach",
                     "stage": "Yoshi's Story",
-                    "entrant1result": "win",
-                    "entrant2result": "lose"
+                    "entrant1Result": "win",
+                    "entrant2Result": "lose"
                 }
             ]
         }
