@@ -25,7 +25,7 @@
                     "description": "Unordered array of all entrants in the tournament. See the `Entrant` definition for more information."
                 }
             },
-            "required": ["properties", "sets", "entrants"],
+            "required": ["event", "sets", "entrants"],
             "title": "Tournament",
             "description": "Root object: every OpenBracketFormat file should consist of exactly one `Tournament` object."
         },
