@@ -1,7 +1,9 @@
 # Open Bracket Format (OBF)
 ### An open standad for tournament bracket data
 
-OBF is a JSON schema for structuring tournament data. It is designed to be as flexible as possible across multiple sports or genres of games, and backwards-compatible as it sees updates. It is also designed to be able to reconstruct brackets. There are three main parts to the schema:
+OBF is a JSON schema for structuring tournament data. It is designed to be as flexible as possible across multiple sports or genres of games, and backwards-compatible as it sees updates. It is also designed to be able to reconstruct brackets out of the JSON data.
+
+There are three main parts to the schema:
 
 ```py
 {
@@ -23,13 +25,11 @@ Suggested optional fields to support:
 - numberEntrants
 
 ```py
-{
-    "event": {
-        "name": "Jersey Japes",
-        // Optional
-        "date": 2021-04-20
-    };
-}
+"event": {
+    "name": "Jersey Japes",
+    // Optional
+    "date": 2021-04-20
+};
 ```
 
 #### ENTRANTS
@@ -42,16 +42,13 @@ Suggested optional fields to support:
 
 
 ```py
-{
-    "entrants": {
-        "entrantID": "324245",
-        // Optional
-        "entrantTag": "CoolPlayer",
-        "initialSeed": 2,
-        "finalPlacement": 1,
-        
-    };
-}
+"entrants": {
+    "entrantID": "324245",
+    // Optional
+    "entrantTag": "CoolPlayer",
+    "initialSeed": 2,
+    "finalPlacement": 1,
+};
 ```
 
 #### SETS
@@ -64,14 +61,12 @@ Suggested optional fields to support:
 
 
 ```py
-{
-    "sets": {
-        "setID": "24601",
-        "entrant1ID": "324245",
-        "entrant2ID": "867530"
-        // Optional
-        "entrant1Result": "win",
-        "entrant2Result": "lose",
-    };
-}
+"sets": {
+    "setID": "24601",
+    "entrant1ID": "324245",
+    "entrant2ID": "867530"
+    // Optional
+    "entrant1Result": "win",
+    "entrant2Result": "lose",
+};
 ```
