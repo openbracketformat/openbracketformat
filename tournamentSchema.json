@@ -143,7 +143,7 @@
                 },
                 "entrant2ID": {
                     "type": "string",
-                    "description": "The entrantID of the first player in this match."
+                    "description": "The entrantID of the second player in this match."
                 },
                 "status": {
                     "type": "string",
@@ -230,6 +230,10 @@
                     "type": "string",
                     "enum": ["win", "lose", "draw"],
                     "description": "String representing the result of entrant 2."
+                },
+                "other": {
+                    "type": "object",
+                    "description": "Object that can be used to store any other relevant round-related information not covered by the previously mentioned fields."
                 }
             },
             "required": ["roundNumber"],
