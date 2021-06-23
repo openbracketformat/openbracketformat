@@ -1,5 +1,5 @@
 # Open Bracket Format (OBF)
-### An open standad for tournament bracket data
+### An open standard for tournament bracket data
 
 OBF is a JSON schema for structuring tournament data. It is designed to be as flexible as possible across multiple sports or genres of games, and backwards-compatible as it sees updates. It is also designed to be able to reconstruct brackets out of the JSON data.
 
