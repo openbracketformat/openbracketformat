@@ -28,7 +28,7 @@ Suggested optional fields to support:
 "event": {
     "name": "Jersey Japes",
     // Optional
-    "date": 2021-04-20
+    "date": 2021-04-20,
 };
 ```
 
@@ -64,7 +64,7 @@ Suggested optional fields to support:
 "sets": {
     "setID": "24601",
     "entrant1ID": "324245",
-    "entrant2ID": "867530"
+    "entrant2ID": "867530",
     // Optional
     "entrant1Result": "win",
     "entrant2Result": "lose",
