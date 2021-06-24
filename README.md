@@ -42,13 +42,16 @@ Suggested optional fields to support:
 
 
 ```py
-"entrants": {
+[
+    {
     "entrantID": "324245",
     // Optional
     "entrantTag": "CoolPlayer",
     "initialSeed": 2,
     "finalPlacement": 1,
-};
+    },
+    ...
+];
 ```
 
 #### SETS
@@ -61,12 +64,15 @@ Suggested optional fields to support:
 
 
 ```py
-"sets": {
+[
+    {
     "setID": "24601",
     "entrant1ID": "324245",
     "entrant2ID": "867530",
     // Optional
     "entrant1Result": "win",
     "entrant2Result": "lose",
-};
+    }
+    ...
+];
 ```
