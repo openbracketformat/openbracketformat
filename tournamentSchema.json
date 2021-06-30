@@ -29,6 +29,56 @@
             "title": "Tournament",
             "description": "Root object: every OpenBracketFormat file should consist of exactly one `Tournament` object."
         },
+        "Event": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "name": {
+                    "type": "string",
+                    "description": "String containing the title of this event. This is a required field."
+                },
+                "date": {
+                    "type": "string",
+                    "format": "date",
+                    "description": "Start date of the event. Should be provided in ISO 8601 format (YYYY-MM-DD)."
+                },
+                "gameName": {
+                    "type": "string",
+                    "description": "String representing the name of the game played at this event."
+                },
+                "tournamentStructure": {
+                    "type": "string",
+                    "description": "String representing the format of this tournament (e.g. single-elimination, double-elimination, etc.). This field should only be used to record format as it relates to the structure of the tournament (i.e. how matches are decided) and not format as it pertains to game-specific factors (e.g. whether it's a teams tournament, the ruleset in use, etc.). For commonly-used structures, use the following identifiers: 'single-elim' (Single elimination), 'double-elim' (Double elimination), 'round-robin' (Round robin)."
+                },
+                "phases": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Phase"
+                    },
+                    "description": "Array of `Phase` objects containing information about each phase of this tournament. Useful for capturing complicated tournament structures, like round-robin pools leading into a double-elimination bracket (where different phases may have different structures). See the `Phase` definition for more information."
+                },
+                "ruleset": {
+                    "type": "string",
+                    "description": "String representing the choice of ruleset."
+                },
+                "originURL": {
+                    "type": "string",
+                    "description": "String containing a external URL linking to the original source of this data (e.g. an external tournament website)."
+                },
+                "numberEntrants": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "description": "Integer containing the number of entrants in this tournament. If populated, this should be equal to the length of the `entrants` subarray of the root `Tournament` object."
+                },
+                "other": {
+                    "type": "object",
+                    "description": "Object that can be used to store any other relevant event-related information not covered by the previously mentioned fields."
+                }
+            },
+            "required": ["name"],
+            "title": "Event",
+            "description": "Object containing metadata relevant to the entire event, such as the name and date of the event, game played, the format of the tournament (e.g. whether it was single-elim or double-elim), etc."
+        },
         "Entrant": {
             "type": "object",
             "additionalProperties": false,
@@ -86,49 +136,6 @@
             "title": "PersonalInformation",
             "description": "Object representing personal information (e.g. name, country) associated with an entrant. Subobject of `Entrant`."
         },
-        "Event": {
-            "type": "object",
-            "additionalProperties": false,
-            "properties": {
-                "name": {
-                    "type": "string",
-                    "description": "String containing the title of this event. This is a required field."
-                },
-                "date": {
-                    "type": "string",
-                    "format": "date",
-                    "description": "Start date of the event. Should be provided in ISO 8601 format (YYYY-MM-DD)."
-                },
-                "game": {
-                    "type": "string",
-                    "description": "String representing the game played at this event."
-                },
-                "tournamentStructure": {
-                    "type": "string",
-                    "description": "String representing the format of this tournament (e.g. single-elimination, double-elimination, etc.). This field should only be used to record format as it relates to the structure of the tournament (i.e. how matches are decided) and not format as it pertains to game-specific factors (e.g. whether it's a teams tournament, the ruleset in use, etc.). For commonly-used structures, use the following identifiers: 'single-elim' (Single elimination), 'double-elim' (Double elimination), 'round-robin' (Round robin)."
-                },
-                "ruleset": {
-                    "type": "string",
-                    "description": "String representing the choice of ruleset."
-                },
-                "originURL": {
-                    "type": "string",
-                    "description": "String containing a external URL linking to the original source of this data (e.g. an external tournament website)."
-                },
-                "numberEntrants": {
-                    "type": "integer",
-                    "minimum": 0,
-                    "description": "Integer containing the number of entrants in this tournament. If populated, this should be equal to the length of the `entrants` subarray of the root `Tournament` object."
-                },
-                "other": {
-                    "type": "object",
-                    "description": "Object that can be used to store any other relevant event-related information not covered by the previously mentioned fields."
-                }
-            },
-            "required": ["name"],
-            "title": "Event",
-            "description": "Object containing metadata relevant to the entire event, such as the name and date of the event, game played, the format of the tournament (e.g. whether it was single-elim or double-elim), etc."
-        },
         "Set": {
             "type": "object",
             "additionalProperties": false,
@@ -172,9 +179,17 @@
                     "type": "string",
                     "description": "The setID of the set that the winner of this set will play next. For a single-elim or double-elim tournament, setting this allows one for reconstruction of the original bracket. If the winner of this set does not play another set (e.g. in the case of finals), do not set this field."
                 },
-                "loserNextSetId": {
+                "loserNextSetID": {
                     "type": "string",
                     "description": "The setID of the set that the loser of this set will play next. For a double-elim tournament, setting this allows one for reconstruction of the original bracket. If the loser of this set does not play another set (e.g. in the case of finals or a match in the losers side of the bracket), do not set this field."
+                },
+                "entrant1PrevSetID": {
+                    "type": "string",
+                    "description": "The setID of the set that entrant 1 played right before this set. If this is entrant 1's first set, do not set this field."
+                },
+                "entrant2PrevSetID": {
+                    "type": "string",
+                    "description": "The setID of the set that entrant 2 played right before this set. If this is entrant 2's first set, do not set this field."
                 },
                 "setFormat": {
                     "type": "string",
@@ -184,12 +199,16 @@
                     "type": "string",
                     "description": "String representing the `phase' of this specific set. It is up to the user's discretion to decide what precisely a phase means. For tournaments with multiple phases / levels (e.g. pools, top 64, top 8), it is convenient to record this information here."
                 },
-                "rounds": {
+                "roundID": {
+                    "type": "string",
+                    "description": "String representing the `round' in the bracket of this specific set (for example, \"Winner's Round 1\" or \"Semifinals\"). It is up to the user's discretion to decide what precisely a round means and how to record it."
+                },
+                "games": {
                     "type": "array",
                     "items": {
-                        "$ref": "#/definitions/Round"
+                        "$ref": "#/definitions/Game"
                     },
-                    "description": "Array of `Round` objects containing information about each round of this set. It is recommended (but not required) that this array records the rounds in chronological order. See the `Round` definition for more information."
+                    "description": "Array of `Game` objects containing information about each game of this set. It is recommended (but not required) that this array records the games in chronological order. See the `Game` definition for more information."
                 },
                 "other": {
                     "type": "object",
@@ -200,26 +219,26 @@
             "title": "Set",
             "description": "Object representing a single set of the tournament."
         },
-        "Round": {
+        "Game": {
             "type": "object",
             "additionalProperties": false,
             "properties": {
-                "roundNumber": {
+                "gameNumber": {
                     "type": "integer",
                     "minimum": 1,
-                    "description": "Integer representing the number (in chronological order) of this round. The `roundNumber`s of the rounds of a set should be unique and span a consecutive range of integers starting at 1."
+                    "description": "Integer representing the number (in chronological order) of this game. The `gameNumber`s of the games of a set should be unique and span a consecutive range of integers starting at 1."
                 },
                 "entrant1Character": {
                     "type": "string",
-                    "description": "String representing the character played by entrant 1 in this round."
+                    "description": "String representing the character played by entrant 1 in this game."
                 },
                 "entrant2Character": {
                     "type": "string",
-                    "description": "String representing the character played by entrant 2 in this round."
+                    "description": "String representing the character played by entrant 2 in this game."
                 },
                 "stage": {
                     "type": "string",
-                    "description": "String representing the stage this round was played on."
+                    "description": "String representing the stage this game was played on."
                 },
                 "entrant1Result": {
                     "type": "string",
@@ -233,12 +252,33 @@
                 },
                 "other": {
                     "type": "object",
-                    "description": "Object that can be used to store any other relevant round-related information not covered by the previously mentioned fields."
+                    "description": "Object that can be used to store any other relevant game-related information not covered by the previously mentioned fields."
                 }
             },
-            "required": ["roundNumber"],
-            "title": "Round",
-            "description": "Object representing a single round of a set."
+            "required": ["gameNumber"],
+            "title": "Game",
+            "description": "Object representing a single game of a set."
+        },
+        "Phase": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "phaseID": {
+                    "type": "string",
+                    "description": "Unique string ID corresponding to this phase."
+                },
+                "phaseStructure": {
+                    "type": "string",
+                    "description": "String representing the format of this tournament in this phase (e.g. single-elimination, double-elimination, etc.). See the `tournamentStructure` field in `Event` for more information."
+                },
+                "other": {
+                    "type": "object",
+                    "description": "Object that can be used to store any other relevant phase-related information not covered by the previously mentioned fields."
+                }
+            },
+            "required": ["phaseID"],
+            "title": "Phase",
+            "description": "Object representing a single phase of a tournament (e.g. pools, top 64, etc.) Useful for recording tournaments with complex structures (e.g. round-robin pools into a double-elimination bracket). See the `phases` field in `Event` for more information."
         }
     }
 }

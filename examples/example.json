@@ -2,7 +2,7 @@
     "event": {
         "name": "Example Tournament",
         "date": "2021-06-17",
-        "game": "Super Smash Brothers Melee",
+        "gameName": "Super Smash Brothers Melee",
         "ruleset": "default",
         "originURL": "www.example.com",
         "numberEntrants": 2
@@ -21,9 +21,9 @@
             "loserNextSetId": "3",
             "setFormat": "bestof5",
             "phaseID": "top 64",
-            "rounds": [
+            "games": [
                 {
-                    "roundNumber": 1,
+                    "gameNumber": 1,
                     "entrant1Character": "falco",
                     "entrant2Character": "peach",
                     "stage": "Final Destination",
@@ -31,7 +31,7 @@
                     "entrant2Result": "lose"
                 },
                 {
-                    "roundNumber": 2,
+                    "gameNumber": 2,
                     "entrant1Character": "falco",
                     "entrant2Character": "peach",
                     "stage": "Yoshi's Story",
@@ -39,7 +39,7 @@
                     "entrant2Result": "lose"
                 },
                 {
-                    "roundNumber": 3,
+                    "gameNumber": 3,
                     "entrant1Character": "falco",
                     "entrant2Character": "peach",
                     "stage": "Yoshi's Story",
