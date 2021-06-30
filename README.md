@@ -1,13 +1,7 @@
 # Open Bracket Format (OBF)
-### An open standard for tournament bracket data
+### An open standad for tournament bracket data
 
-<<<<<<< HEAD
-OBF is a JSON schema for structuring tournament data. It is designed to be as flexible as possible across multiple sports or genres of games, and backwards-compatible as it sees updates. It is also designed to be able to reconstruct brackets out of the JSON data.
-
-There are three main parts to the schema:
-=======
 Open Bracket Format (OBF) is a JSON schema for structuring tournament data. It is designed to be as flexible as possible across multiple sports or genres of games, and backwards-compatible as it sees updates. It is also designed to be able to reconstruct brackets. There are three main parts to the schema:
->>>>>>> Add FAQ to Readme
 
 ```py
 {
@@ -28,14 +22,6 @@ Suggested optional fields to support:
 - originURL
 - numberEntrants
 
-<<<<<<< HEAD
-```py
-"event": {
-    "name": "Jersey Japes",
-    // Optional
-    "date": 2021-04-20,
-};
-=======
 ```js
 {
     "event": {
@@ -44,7 +30,6 @@ Suggested optional fields to support:
         "date": "2021-04-20"
     }
 }
->>>>>>> Add FAQ to Readme
 ```
 
 #### ENTRANTS
@@ -56,27 +41,14 @@ Suggested optional fields to support:
 - finalPlacement
 
 
-<<<<<<< HEAD
-```py
-[
-    {
-=======
 ```js
 {
->>>>>>> Add FAQ to Readme
     "entrantID": "324245",
     // Optional
     "entrantTag": "CoolPlayer",
     "initialSeed": 2,
-<<<<<<< HEAD
-    "finalPlacement": 1,
-    },
-    ...
-];
-=======
     "finalPlacement": 1
 }
->>>>>>> Add FAQ to Readme
 ```
 
 #### SETS
@@ -88,34 +60,19 @@ Suggested optional fields to support:
 - entrant2Result
 
 
-<<<<<<< HEAD
-```py
-[
-    {
-=======
 ```js
 {
->>>>>>> Add FAQ to Readme
     "setID": "24601",
     "entrant1ID": "324245",
     "entrant2ID": "867530",
     // Optional
     "entrant1Result": "win",
     "entrant2Result": "lose",
-<<<<<<< HEAD
-    }
-    ...
-];
-=======
     "rounds": [...]
 }
 ```
 
 ### FAQ
-
-#### How do I store a tournament in Open Bracket Format?
-
-
 
 #### What should I do if I don't know the value of some field (e.g. player character)?
 
@@ -136,7 +93,6 @@ Every object in OBF has an `other` field for this purpose. For example, if you w
         }
     }
 }
->>>>>>> Add FAQ to Readme
 ```
 
 If you think there is a field that the current OBF specification is missing, you can suggest adding it to the specification by creating a GitHub issue in this repository (or by contacting the creators directly). 
