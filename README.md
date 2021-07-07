@@ -3,7 +3,7 @@
 
 Open Bracket Format (OBF) is a JSON schema for structuring tournament data. It is designed to be as flexible as possible across multiple sports or genres of games, and backwards-compatible as it sees updates. It is also designed to be able to reconstruct brackets. There are three main parts to the schema:
 
-```py
+```js
 {
     "event": {...},
     "entrants": [...],
@@ -27,7 +27,8 @@ Suggested optional fields to support:
     "event": {
         "name": "Jersey Japes",
         // Optional
-        "date": "2021-04-20"
+        "date": "2021-04-20",
+        "gamename": "Pong",
     }
 }
 ```
@@ -68,7 +69,7 @@ Suggested optional fields to support:
     // Optional
     "entrant1Result": "win",
     "entrant2Result": "lose",
-    "rounds": [...]
+    "games": [...]
 }
 ```
 
