@@ -25,11 +25,7 @@
                     "description": "Unordered array of all entrants in the tournament. See the `Entrant` definition for more information."
                 }
             },
-            "required": [
-                "event",
-                "sets",
-                "entrants"
-            ],
+            "required": ["event", "sets", "entrants"],
             "title": "Tournament",
             "description": "Root object: every OpenBracketFormat file should consist of exactly one `Tournament` object."
         },
@@ -83,9 +79,7 @@
                     "description": "Object that can be used to store any other relevant event-related information not covered by the previously mentioned fields."
                 }
             },
-            "required": [
-                "name"
-            ],
+            "required": ["name"],
             "title": "Event",
             "description": "Object containing metadata relevant to the entire event, such as the name and date of the event, game played, the format of the tournament (e.g. whether it was single-elim or double-elim), etc."
         },
@@ -121,9 +115,7 @@
                     "description": "Object that can be used to store any other relevant entrant-related information not covered by the previously mentioned fields."
                 }
             },
-            "required": [
-                "entrantID"
-            ],
+            "required": ["entrantID"],
             "title": "Entrant",
             "description": "Object representing an entrant in the tournament. Every unique entrant which appears in a set should have a corresponding `Entrant` object in the `entrants` subfield of `Tournament`."
         },
@@ -239,9 +231,7 @@
                     "description": "Object that can be used to store any other relevant set-related information not covered by the previously mentioned fields."
                 }
             },
-            "required": [
-                "setID"
-            ],
+            "required": ["setID"],
             "title": "Set",
             "description": "Object representing a single set of the tournament."
         },
@@ -289,9 +279,7 @@
                     "description": "Object that can be used to store any other relevant game-related information not covered by the previously mentioned fields."
                 }
             },
-            "required": [
-                "gameNumber"
-            ],
+            "required": ["gameNumber"],
             "title": "Game",
             "description": "Object representing a single game of a set."
         },
@@ -312,9 +300,7 @@
                     "description": "Object that can be used to store any other relevant phase-related information not covered by the previously mentioned fields."
                 }
             },
-            "required": [
-                "phaseID"
-            ],
+            "required": ["phaseID"],
             "title": "Phase",
             "description": "Object representing a single phase of a tournament (e.g. pools, top 64, etc.) Useful for recording tournaments with complex structures (e.g. round-robin pools into a double-elimination bracket). See the `phases` field in `Event` for more information."
         }
