@@ -155,7 +155,7 @@
                 "status": {
                     "type": "string",
                     "enum": ["completed", "started", "pending"],
-                    "description": "String representing the status of this set. If populated, must take one of the following values: 'completed' (if the set has finished), 'in progress' (if the set is currently in progress), or 'awaiting' (if the set has yet to start)."
+                    "description": "String representing the status of this set. If populated, must take one of the following values: 'completed' (if the set has finished), 'started' (if the set is currently in progress), or 'pending' (if the set has yet to start)."
                 },
                 "entrant1Result": {
                     "type": "string",
