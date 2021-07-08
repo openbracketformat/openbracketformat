@@ -109,3 +109,8 @@ Secondly, there are a number of ways to contribute to this project technically. 
 If you are interested in writing any of these, please let us know (or just directly send a pull request). 
 
 Finally, this project is still in its early stages, and we're still looking for input. If you have any suggestions on how we can change this spec for the better, please file a GitHub Issue or contact one of the creators. Thanks!
+
+### Implementations
+
+Rust: https://crates.io/crates/obf-rs by https://github.com/RLHerbert
+ 
