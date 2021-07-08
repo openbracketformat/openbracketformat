@@ -70,6 +70,10 @@
                     "minimum": 0,
                     "description": "Integer containing the number of entrants in this tournament. If populated, this should be equal to the length of the `entrants` subarray of the root `Tournament` object."
                 },
+                "location": {
+                    "type": "string",
+                    "description": "String containing information about the location of the event."
+                },
                 "other": {
                     "type": "object",
                     "description": "Object that can be used to store any other relevant event-related information not covered by the previously mentioned fields."
@@ -125,7 +129,7 @@
                 },
                 "country": {
                     "type": "string",
-                    "description": "String containing entrant's country."
+                    "description": "String containing entrant's country. Should be in ISO 3166 alpha-2 format (`US`, `GB`, `JP`) to provide a proper standard for software parsing this information."
                 },
                 "other": {
                     "type": "object",
@@ -154,17 +158,29 @@
                 },
                 "status": {
                     "type": "string",
-                    "enum": ["completed", "started", "pending"],
+                    "enum": [
+                        "completed",
+                        "started",
+                        "pending"
+                    ],
                     "description": "String representing the status of this set. If populated, must take one of the following values: 'completed' (if the set has finished), 'in progress' (if the set is currently in progress), or 'awaiting' (if the set has yet to start)."
                 },
                 "entrant1Result": {
                     "type": "string",
-                    "enum": ["win", "lose", "draw"],
+                    "enum": [
+                        "win",
+                        "lose",
+                        "draw"
+                    ],
                     "description": "String representing the result of entrant 1 in this match. If populated, must equal either 'win', 'lose', or 'draw'."
                 },
                 "entrant2Result": {
                     "type": "string",
-                    "enum": ["win", "lose", "draw"],
+                    "enum": [
+                        "win",
+                        "lose",
+                        "draw"
+                    ],
                     "description": "String representing the result of entrant 2 in this match. If populated, must equal either 'win', 'lose', or 'draw'."
                 },
                 "entrant1Score": {
@@ -242,12 +258,20 @@
                 },
                 "entrant1Result": {
                     "type": "string",
-                    "enum": ["win", "lose", "draw"],
+                    "enum": [
+                        "win",
+                        "lose",
+                        "draw"
+                    ],
                     "description": "String representing the result of entrant 1."
                 },
                 "entrant2Result": {
                     "type": "string",
-                    "enum": ["win", "lose", "draw"],
+                    "enum": [
+                        "win",
+                        "lose",
+                        "draw"
+                    ],
                     "description": "String representing the result of entrant 2."
                 },
                 "other": {
