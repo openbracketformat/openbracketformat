@@ -1,4 +1,5 @@
 {
+    "version": "v0.2",
     "event": {
         "name": "Example Tournament",
         "date": "2021-06-17",
@@ -18,30 +19,30 @@
             "entrant1Score": 3,
             "entrant2Score": 0,
             "winnerNextSetID": "4",
-            "loserNextSetId": "3",
+            "loserNextSetID": "3",
             "setFormat": "bestof5",
             "phaseID": "top 64",
             "games": [
                 {
                     "gameNumber": 1,
-                    "entrant1Character": "falco",
-                    "entrant2Character": "peach",
+                    "entrant1Characters": ["falco"],
+                    "entrant2Characters": ["peach"],
                     "stage": "Final Destination",
                     "entrant1Result": "win",
                     "entrant2Result": "lose"
                 },
                 {
                     "gameNumber": 2,
-                    "entrant1Character": "falco",
-                    "entrant2Character": "peach",
+                    "entrant1Characters": ["falco"],
+                    "entrant2Characters": ["peach"],
                     "stage": "Yoshi's Story",
                     "entrant1Result": "win",
                     "entrant2Result": "lose"
                 },
                 {
                     "gameNumber": 3,
-                    "entrant1Character": "falco",
-                    "entrant2Character": "peach",
+                    "entrant1Characters": ["falco"],
+                    "entrant2Characters": ["peach"],
                     "stage": "Yoshi's Story",
                     "entrant1Result": "win",
                     "entrant2Result": "lose"
