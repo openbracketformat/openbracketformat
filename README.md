@@ -65,14 +65,14 @@ The only required fields in OBF are the root-level `sets`, `entrants`, and `even
 
 #### I want to store some information in an OBF file, but there's no field for it. What should I do?
 
-Every object in OBF has an `other` field for this purpose. For example, if you would like to store the value of the pot bonus for the current event, you can do that by adding a `pot_bonus` field to the `other` object in `event` as follows:
+Every object in OBF has an `other` field for this purpose. For example, if you would like to store the value of the pot bonus for the current event, you can do that by adding a `potBonus` field to the `other` object in `event` as follows:
 
 ```js
 {
     "event": {
         "name": "Tournament Tournament",
         "other": {
-            "pot_bonus": 1000.0
+            "potBonus": 1000.0
         }
     }
 }
@@ -80,7 +80,7 @@ Every object in OBF has an `other` field for this purpose. For example, if you w
 
 If you think there is a field that the current OBF specification is missing, you can suggest adding it to the specification by creating a GitHub issue in this repository (or by contacting the creators directly). 
 
-PS: The specification only allows for adding new fields to the `other` subobject, not directly to any other object (e.g., it would be incorrect to add the `pot_bonus` field above directly to the `event` object). This is mostly to help us keep things forwards- and backwards-compatible as we add new fields to the current spec.
+PS: The specification only allows for adding new fields to the `other` subobject, not directly to any other object (e.g., it would be incorrect to add the `potBonus` field above directly to the `event` object). This is mostly to help us keep things forwards- and backwards-compatible as we add new fields to the current spec.
 
 #### How can I check whether I've correctly formatted a tournament in Open Bracket Format?
 
