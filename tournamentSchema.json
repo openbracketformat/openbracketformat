@@ -175,13 +175,13 @@
                 },
                 "entrant1Result": {
                     "type": "string",
-                    "enum": ["win", "lose", "draw"],
-                    "description": "String representing the result of entrant 1 in this match. If populated, must equal either 'win', 'lose', or 'draw'."
+                    "enum": ["win", "lose", "draw", "dq"],
+                    "description": "String representing the result of entrant 1 in this match. If populated, must equal either 'win', 'lose', 'draw', or 'dq'. In the case of 'dq', the player disqualified should be assigned the 'dq' result and the other player should be assigned the 'win' result. (If both players are disqualified, both should be assigned 'dq')."
                 },
                 "entrant2Result": {
                     "type": "string",
-                    "enum": ["win", "lose", "draw"],
-                    "description": "String representing the result of entrant 2 in this match. If populated, must equal either 'win', 'lose', or 'draw'."
+                    "enum": ["win", "lose", "draw", "dq"],
+                    "description": "String representing the result of entrant 2 in this match. If populated, must equal either 'win', 'lose', 'draw', or 'dq'."
                 },
                 "entrant1Score": {
                     "type": "integer",
