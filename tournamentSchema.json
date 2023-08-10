@@ -108,8 +108,11 @@
                     "description": "Integer representing the final placing of this entrant."
                 },
                 "personalInformation": {
-                    "$ref": "#/definitions/PersonalInformation",
-                    "description": "Object containing personal data about this entrant (e.g. legal name, country, etc.)."
+                	"type": "array",
+                	"items": {
+                		"$ref": "#/definitions/PersonalInformation"
+                	},
+                	"description": "List of personal data about players corresponding to this entrant (e.g. legal name, country, etc.). If this entrant corresponds to a single player, this will be a list of size one. If it is a team of several players, there will be one entry per player."
                 },
                 "other": {
                     "type": "object",
@@ -131,6 +134,14 @@
                 "country": {
                     "type": "string",
                     "description": "String containing entrant's country."
+                },
+                "tag": {
+                    "type": "string",
+                    "description": "String containing entrant's tag. Same as entrantTag if entrant is a single player."
+                },
+                "prefix": {
+                    "type": "string",
+                    "description": "String containing prefix for entrant's tag."
                 },
                 "other": {
                     "type": "object",
