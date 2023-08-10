@@ -18,8 +18,8 @@
             "entrant2Result": "lose",
             "entrant1Score": 3,
             "entrant2Score": 0,
-            "winnerNextSetID": "4",
-            "loserNextSetID": "3",
+            "entrant1NextSetID": "4",
+            "entrant2NextSetID": "3",
             "setFormat": "bestof5",
             "phaseID": "top 64",
             "games": [
@@ -56,20 +56,24 @@
             "entrantTag": "Alice",
             "initialSeed": 1,
             "finalPlacement": 1,
-            "personalInformation": {
+            "personalInformation": [{
                 "name": "Alice Alice",
-                "country": "USA"
-            }
+                "country": "USA",
+                "tag": "Alice",
+                "prefix": "RUM"
+            }]
         },
         {
             "entrantID": "dave",
             "entrantTag": "Dave",
             "initialSeed": 2,
             "finalPlacement": 2,
-            "personalInformation": {
+            "personalInformation": [{
                 "name": "Dave McDave",
-                "country": "USA"
-            }
+                "country": "USA",
+                "tag": "Dave",
+                "prefix": "ZEN"
+            }]
         }
     ]
 }
