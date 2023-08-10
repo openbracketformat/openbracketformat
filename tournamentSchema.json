@@ -191,13 +191,13 @@
                     "type": "integer",
                     "description": "Integer representing the score of entrant 2 in this match."
                 },
-                "winnerNextSetID": {
+                "entrant1NextSetID": {
                     "type": "string",
-                    "description": "The setID of the set that the winner of this set will play next. For a single-elim or double-elim tournament, setting this allows one for reconstruction of the original bracket. If the winner of this set does not play another set (e.g. in the case of finals), do not set this field."
+                    "description": "The setID of the set that entrant 1 will play next. For a single-elim or double-elim tournament, setting this allows one for reconstruction of the original bracket. If entrant 1 does not play another set (e.g. they have won or are knocked out), do not set this field."
                 },
-                "loserNextSetID": {
+                "entrant2NextSetID": {
                     "type": "string",
-                    "description": "The setID of the set that the loser of this set will play next. For a double-elim tournament, setting this allows one for reconstruction of the original bracket. If the loser of this set does not play another set (e.g. in the case of finals or a match in the losers side of the bracket), do not set this field."
+                    "description": "The setID of the set that entrant 2 will play next. For a double-elim tournament, setting this allows one for reconstruction of the original bracket. If entrant 2 does not play another set, do not set this field."
                 },
                 "entrant1PrevSetID": {
                     "type": "string",
