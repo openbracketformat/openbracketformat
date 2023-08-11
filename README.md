@@ -115,5 +115,9 @@ Finally, this project is still in its early stages, and we're still looking for 
 
 ### Implementations
 
+v1.0 - TBD
+
+v0.1 - OUTDATED
+
 Rust: https://crates.io/crates/obf-rs by https://github.com/RLHerbert
  
