@@ -93,7 +93,7 @@ One warning: there are some rules we describe in the schema that cannot be captu
 
 #### How can I reconstruct the bracket from the information in an OBF file?
 
-If the creator of the OBF file has populated the `winnerNextSetID` and `loserNextSetID` fields for each set, you can use those to reconstruct the bracket. The creator also has the option to populate the `entrant1PrevSetID` and `entrant2PrevSetID` fields, which can further help with reconstruction. In the future, we plan to add an example script demonstrating how to reconstruct single-elimination and double-elimination brackets from an OBF file.
+If the creator of the OBF file has populated the `entrant1NextSetID` and `entrant2NextSetID` fields for each set, you can use those to reconstruct the bracket. The creator also has the option to populate the `entrant1PrevSetID` and `entrant2PrevSetID` fields, which can further help with reconstruction. In the future, we plan to add an example script demonstrating how to reconstruct single-elimination and double-elimination brackets from an OBF file.
 
 #### Do you have any examples of tournaments in Open Bracket Format?
 
