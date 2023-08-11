@@ -26,7 +26,7 @@
                 },
                 "version": {
                     "type": "string",
-                    "enum": ["v0.1", "v0.2"],
+                    "enum": ["v0.1", "v0.2", "v1.0"],
                     "description": "Stores the version of the Open Bracket Format specification that this file was generated in accordance with. It is highly recommended (but not required) to include this field -- if this field is not set, the default assumption will be that the file was generated with the most recent version of OBF. The current version of the OBF format (what you are reading) is `v0.2`."
                 }
             },
