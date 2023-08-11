@@ -4,7 +4,7 @@
 🔗Twitter: https://twitter.com/openbracketform
 🔗Discord: https://discord.gg/gJhDgUqdqu
 
-Open Bracket Format (OBF) is a JSON schema for structuring tournament data. It is designed to be as flexible as possible across multiple sports or genres of games, and backwards-compatible as it sees updates. It is also designed to be able to reconstruct brackets. There are three main parts to the schema:
+Open Bracket Format (OBF) is a JSON schema for structuring 'entity vs entity' tournament data. It is designed to be as flexible as possible across multiple sports or genres of games, and backwards-compatible as it sees updates. It is also designed to be able to reconstruct brackets. There are three main parts to the schema:
 
 ```js
 {
