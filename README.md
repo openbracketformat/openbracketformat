@@ -107,7 +107,7 @@ Secondly, there are a number of ways to contribute to this project technically. 
 
 - a validation script for the OBF format.
 - a script for reconstructing single-elim and double-elim brackets from OBF files.
-- scrapers for converting common web tournament formats (e.g. challonge.com, smash.gg) into OBF.
+- scrapers for converting common web tournament formats (e.g. challonge.com, start.gg) into OBF.
 
 If you are interested in writing any of these, please let us know (or just directly send a pull request). 
 
