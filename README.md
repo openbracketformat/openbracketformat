@@ -115,7 +115,9 @@ Finally, this project is still in its early stages, and we're still looking for 
 
 ### Implementations
 
-v1.0 - TBD
+v1.0 - CURRENT
+
+Challonge/Startgg Exporter: https://github.com/SuperSoma/OBFexporter by https://github.com/superSoma/
 
 v0.1 - OUTDATED
 
