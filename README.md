@@ -25,7 +25,7 @@ This area carries information about the tournament itself.
         // Optional
         "date": "2021-04-20",
         "gameName": "Pong",
-        "numberEntrants": "23",
+        "numberEntrants": 23,
     }
 }
 ```
