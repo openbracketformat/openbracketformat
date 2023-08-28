@@ -261,12 +261,12 @@
                 },
                 "entrant1Result": {
                     "type": "string",
-                    "enum": ["win", "lose", "draw"],
+                    "enum": ["win", "lose", "draw", "dq"],
                     "description": "String representing the result of entrant 1."
                 },
                 "entrant2Result": {
                     "type": "string",
-                    "enum": ["win", "lose", "draw"],
+                    "enum": ["win", "lose", "draw", "dq"],
                     "description": "String representing the result of entrant 2."
                 },
                 "other": {
