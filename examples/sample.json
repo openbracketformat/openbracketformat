@@ -1,0 +1,71 @@
+{
+  "event": {
+    "name": "name",
+    "date": "2023-08-30",
+    "gameName": "gameName",
+    "tournamentStructure": "tournamentStructure",
+    "phases": [
+      {
+        "phaseID": "phaseID",
+        "phaseStructure": "phaseStructure",
+        "other": {}
+      }
+    ],
+    "ruleset": "ruleset",
+    "originURL": "originURL",
+    "numberEntrants": 0,
+    "other": {}
+  },
+  "sets": [
+    {
+      "setID": "setID",
+      "entrant1ID": "entrant1ID",
+      "entrant2ID": "entrant2ID",
+      "status": "completed",
+      "entrant1Result": "win",
+      "entrant2Result": "win",
+      "entrant1Score": 0,
+      "entrant2Score": 0,
+      "entrant1NextSetID": "entrant1NextSetID",
+      "entrant2NextSetID": "entrant2NextSetID",
+      "entrant1PrevSetID": "entrant1PrevSetID",
+      "entrant2PrevSetID": "entrant2PrevSetID",
+      "setFormat": "setFormat",
+      "phaseID": "phaseID",
+      "roundID": "roundID",
+      "games": [
+        {
+          "gameNumber": 1,
+          "entrant1Characters": [
+            ""
+          ],
+          "entrant2Characters": null,
+          "stage": "stage",
+          "entrant1Result": "win",
+          "entrant2Result": "win",
+          "other": {}
+        }
+      ],
+      "other": {}
+    }
+  ],
+  "entrants": [
+    {
+      "entrantID": "entrantID",
+      "entrantTag": "entrantTag",
+      "initialSeed": 1,
+      "finalPlacement": 1,
+      "personalInformation": [
+        {
+          "name": "name",
+          "country": "country",
+          "tag": "tag",
+          "prefix": "prefix",
+          "other": {}
+        }
+      ],
+      "other": {}
+    }
+  ],
+  "version": "v0.1"
+}
