@@ -119,6 +119,8 @@ v1.0 - CURRENT
 
 Challonge/Startgg Exporter: https://github.com/SuperSoma/OBFexporter by https://github.com/superSoma/
 
+Web Visualizer: https://github.com/eric-centrifuge/obf-visualizer by https://github.com/eric-centrifuge/
+
 v0.1 - OUTDATED
 
 Rust: https://crates.io/crates/obf-rs by https://github.com/RLHerbert
