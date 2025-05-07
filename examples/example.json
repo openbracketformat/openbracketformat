@@ -1,79 +1,268 @@
 {
-    "version": "v1.0",
-    "event": {
-        "name": "Example Tournament",
-        "date": "2021-06-17",
-        "gameName": "Super Smash Brothers Melee",
-        "ruleset": "default",
-        "originURL": "www.example.com",
-        "numberEntrants": 2
-    },
-    "sets": [
-        {
-            "setID": "1",
-            "entrant1ID": "alice",
-            "entrant2ID": "dave",
-            "status": "completed",
-            "entrant1Result": "win",
-            "entrant2Result": "lose",
-            "entrant1Score": 3,
-            "entrant2Score": 0,
-            "entrant1NextSetID": "4",
-            "entrant2NextSetID": "3",
-            "setFormat": "bestof5",
-            "phaseID": "top 64",
-            "games": [
-                {
-                    "gameNumber": 1,
-                    "entrant1Characters": ["falco"],
-                    "entrant2Characters": ["peach"],
-                    "stage": "Final Destination",
-                    "entrant1Result": "win",
-                    "entrant2Result": "lose"
-                },
-                {
-                    "gameNumber": 2,
-                    "entrant1Characters": ["falco"],
-                    "entrant2Characters": ["peach"],
-                    "stage": "Yoshi's Story",
-                    "entrant1Result": "win",
-                    "entrant2Result": "lose"
-                },
-                {
-                    "gameNumber": 3,
-                    "entrant1Characters": ["falco"],
-                    "entrant2Characters": ["peach"],
-                    "stage": "Yoshi's Story",
-                    "entrant1Result": "win",
-                    "entrant2Result": "lose"
-                }
-            ]
-        }
-    ],
-    "entrants": [
-        {
-            "entrantID": "alice",
-            "entrantTag": "Alice",
-            "initialSeed": 1,
-            "finalPlacement": 1,
-            "personalInformation": [{
-                "name": "Alice Alice",
-                "country": "USA",
-                "tag": "Alice",
-                "prefix": "RUM"
-            }]
-        },
-        {
-            "entrantID": "dave",
-            "entrantTag": "Dave",
-            "initialSeed": 2,
-            "finalPlacement": 2,
-            "personalInformation": [{
-                "name": "Dave McDave",
-                "country": "USA",
-                "tag": "Dave",
-                "prefix": "ZEN"
-            }]
-        }
-    ]
+  "title": "Example Tournament ",
+  "version": "v1.0",
+  "description": "Quick tourney for friends",
+    "SetGameResult": [ "win", "lose", "draw", "dq" ],
+    "tournamentID": "23fjas08324nfas0234h5sd03brf",
+	"event": {
+		"eventDate": "2021-12-17",
+		"gameName": "Super Smash Brothers Ultimate",
+		"name": "Example Tournament",
+		"numberEntrants": 4,
+		"originURL": "www.example.com",
+		"other": null,
+		"ruleset": "default",
+		"tournamentStructure": "single-elim"
+		},
+		"phases": [
+			{
+				"other": null,
+				"phaseID": "77fdsn23edssdcsafs0df554fdgsdg",
+				"phaseStructure": "Top 4"
+			},
+			{
+				"other": null,
+				"phaseID": "330034b1fdsdsfllcdsabfdsafaaw2qwe",
+				"phaseStructure": "Final"
+			}
+		],
+		"sets": [
+			{
+				"entrant1ID": "Alice",
+				"entrant1PrevSetID": null,
+				"entrant1Result": "win",
+				"entrant1Score": 3,
+				"entrant2ID": "Dave",
+				"entrant2PrevSetID": null,
+				"entrant2Result": "lose",
+				"entrant2Score": 0,
+				"games": [
+					{
+						"entrant1Characters": [
+							"falco"
+						],
+						"entrant1Result": "win",
+						"entrant2Characters": [
+							"peach"
+						],
+						"entrant2Result": "lose",
+						"gameNumber": 1,
+						"other": null,
+						"stage": "Final Destination"
+					},
+					{
+						"entrant1Characters": [
+							"falco"
+						],
+						"entrant1Result": "win",
+						"entrant2Characters": [
+							"peach"
+						],
+						"entrant2Result": "lose",
+						"gameNumber": 2,
+						"other": null,
+						"stage": "Yoshi's Story"
+					},
+					{
+						"entrant1Characters": [
+							"falco"
+						],
+						"entrant1Result": "win",
+						"entrant2Characters": [
+							"peach"
+						],
+						"entrant2Result": "lose",
+						"gameNumber": 3,
+						"other": null,
+						"stage": "Yoshi's Story"
+					}
+				],
+				"entrant1NextSetID": "4",
+				"other": null,
+				"phaseID": "77fdsn23edssdcsafs0df554fdgsdg",
+				"roundID": null,
+				"setFormat": "bestof5",
+				"setID": "1",
+				"status": "completed",
+				"entrant2NextSetID": ""
+			},
+			{
+				"entrant1ID": "Zay",
+				"entrant1PrevSetID": null,
+				"entrant1Result": "lose",
+				"entrant1Score": 2,
+				"entrant2ID": "Felicia",
+				"entrant2PrevSetID": null,
+				"entrant2Result": "win",
+				"entrant2Score": 3,
+				"games": [
+					{
+						"entrant1Characters": [
+							"Mario"
+						],
+						"entrant1Result": "win",
+						"entrant2Characters": [
+							"Luigi"
+						],
+						"entrant2Result": "lose",
+						"gameNumber": 1,
+						"other": null,
+						"stage": "Battlefield"
+					},
+					{
+						"entrant1Characters": [
+							"Mario"
+						],
+						"entrant1Result": "lose",
+						"entrant2Characters": [
+							"Luigi"
+						],
+						"entrant2Result": "win",
+						"gameNumber": 2,
+						"other": null,
+						"stage": "Yoshi's Story"
+					},
+					{
+						"entrant1Characters": [
+							"falco"
+						],
+						"entrant1Result": "win",
+						"entrant2Characters": [
+							"peach"
+						],
+						"entrant2Result": "lose",
+						"gameNumber": 3,
+						"other": null,
+						"stage": "Yoshi's Story"
+					},
+					{
+						"entrant1Characters": [
+							"Mario"
+						],
+						"entrant1Result": "lose",
+						"entrant2Characters": [
+							"Luigi"
+						],
+						"entrant2Result": "win",
+						"gameNumber": 4,
+						"other": null,
+						"stage": "Yoshi's Story"
+					},
+					{
+						"entrant1Characters": [
+							"Mario"
+						],
+						"entrant1Result": "lose",
+						"entrant2Characters": [
+							"Luigi"
+						],
+						"entrant2Result": "win",
+						"gameNumber": 5,
+						"other": null,
+						"stage": "Final Destination"
+					}
+				],
+				"entrant1NextSetID": "",
+				"other": null,
+				"phaseID": "77fdsn23edssdcsafs0df554fdgsdg",
+				"roundID": null,
+				"setFormat": "bestof5",
+				"setID": "2",
+				"status": "completed",
+				"entrant2NextSetID": "4"
+			},
+			{
+				"entrant1ID": "Felicia",
+				"entrant1PrevSetID": null,
+				"entrant1Result": "dq",
+				"entrant1Score": 0,
+				"entrant2ID": "Alice",
+				"entrant2PrevSetID": null,
+				"entrant2Result": "win",
+				"entrant2Score": 3,
+				"games": [],
+				"entrant1NextSetID": "",
+				"other": null,
+				"phaseID": "330034b1fdsdsfllcdsabfdsafaaw2qwe",
+				"roundID": null,
+				"setFormat": "bestof5",
+				"setID": "4",
+				"status": "completed",
+				"entrant2NextSetID": ""
+			}
+		],
+		"entrants": [
+			{
+				"entrantID": "Alice",
+				"entrantTag": "Alice",
+				"entrantTeam": "None",
+				"finalPlacement": 1,
+				"initialSeed": 1,
+				"other": null,
+				"personalInformation":[ {
+					"country": "USA",
+					"gender": null,
+					"entrant_language": null,
+					"name": "Alice Alice",
+					"other": null,
+					"pronouns": null,
+					"entrantTag": "Alice",
+					"entrant_prefix": "RUM"
+				}]
+			},
+			{
+				"entrantID": "Zay",
+				"entrantTag": "Zay",
+				"entrantTeam": "None",
+				"finalPlacement": 3,
+				"initialSeed": 4,
+				"other": null,
+				"personalInformation":[ {
+					"country": "USA",
+					"gender": null,
+					"entrant_language": null,
+					"name": "Zay Zay",
+					"other": null,
+					"pronouns": null,
+					"entrantTag": "Zay",
+					"entrant_prefix": "PRCF"
+				}]
+			},
+			{
+				"entrantID": "Felicia",
+				"entrantTag": "Felicia",
+				"entrantTeam": "None",
+				"finalPlacement": 2,
+				"initialSeed": 4,
+				"other": null,
+				"personalInformation":[ {
+					"country": "USA",
+					"gender": null,
+					"entrant_language": null,
+					"name": "Felicia Felicia",
+					"other": null,
+					"pronouns": null,
+					"entrantTag": "Felicia",
+					"entrant_prefix": "TXO"
+				}]
+			},
+			{
+				"entrantID": "Dave",
+				"entrantTag": "Dave",
+				"entrantTeam": "None",
+				"finalPlacement": 3,
+				"initialSeed": 2,
+				"other": null,
+				"personalInformation": [{
+					"country": "USA",
+					"gender": null,
+					"entrant_language": null,
+					"name": "Dave McDave",
+					"other": null,
+					"pronouns": null,
+					"entrantTag": "Dave",
+					"entrant_prefix": "ZEN"
+				}]
+			}
+		]
 }
