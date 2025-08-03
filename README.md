@@ -117,11 +117,15 @@ Finally, this project is still in its early stages, and we're still looking for 
 
 v1.0 - CURRENT
 
-Challonge/Startgg Exporter: https://github.com/SuperSoma/OBFexporter by https://github.com/superSoma/
+mtch.gg by Jaxvex (https://x.com/jaxvex) - https://mtch.gg
 
-Web Visualizer: https://github.com/eric-centrifuge/obf-visualizer by https://github.com/eric-centrifuge/
+
+Challonge/Startgg Exporter by Nick Zonak (https://x.com/NickZonak) - https://github.com/SuperSoma/OBFexporter
+
+
+Web Visualizer by Eric-Centrifuge (https://github.com/eric-centrifuge/) - https://github.com/eric-centrifuge/obf-visualizer
+
 
 v0.1 - OUTDATED
 
-Rust: https://crates.io/crates/obf-rs by https://github.com/RLHerbert
- 
+Rust by RLHerbert (https://github.com/RLHerbert) - https://crates.io/crates/obf-rs
