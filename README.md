@@ -119,11 +119,10 @@ v1.0 - CURRENT
 
 mtch.gg by Jaxvex (https://x.com/jaxvex) - https://mtch.gg
 
+OBF Web Visualizer by Jaxvex (https://x.com/jaxvex) - https://github.com/eric-centrifuge/obf-visualizer/tree/master
 
-Challonge/Startgg Exporter by Nick Zonak (https://x.com/NickZonak) - https://github.com/SuperSoma/OBFexporter
+Challonge/Startgg OBF Exporter by Nick Zonak (https://x.com/NickZonak) - https://github.com/SuperSoma/OBFexporter
 
-
-Web Visualizer by Eric-Centrifuge (https://github.com/eric-centrifuge/) - https://github.com/eric-centrifuge/obf-visualizer
 
 
 v0.1 - OUTDATED
