@@ -3,3 +3,8 @@
 ################################################################################
 
 /.vs
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/openbracketformat.iml
+/.idea/ShadcnHelperSettings.xml
+/.idea/vcs.xml
